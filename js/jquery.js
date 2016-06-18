@@ -1,6 +1,5 @@
 $(function() {
 
-  $("#card").flip();
 
   var $root = $('html, body');
   var header = $(".nav-bar");

@@ -22,6 +22,7 @@
 
 .main-image {
   margin-bottom: 20px;
+  max-width: 85%;
 }
 
 .home-text {
@@ -228,4 +229,20 @@ ul.dash-list {
 
 .how-its-made {
   padding: 40px 80px;
+}
+
+.link-paragraph {
+  display: inline-block;
+  background-color: $highlight;
+  color: #fff;
+  padding: 5px 8px;
+
+  a {
+    font-weight: 700;
+    color:#19044a;
+  }
+
+  a:hover {
+    color: #380d9a;
+  }
 }
