@@ -1,0 +1,106 @@
+@import 'base/_variables.scss';
+@import 'base/_reset.scss';
+@import 'base/_base.scss';
+@import 'base/_mixins.scss';
+@import 'layout/_header.scss';
+@import 'layout/_footer.scss';
+
+
+body {
+  font-family: $roboto;
+  margin: 0px;
+  background-color: $background;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $roboto;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
+/* MEDIA-QUERIES */
+
+@media screen and (max-width: 768px) {
+  
+  .menu-list {
+    background-color: #fff;
+    width: 95%;
+    margin: 0 auto;
+    display: block;
+    height: 0;
+    list-style-type: none;
+    opacity: 0;
+    padding: 0;
+    text-align: center;
+    transition: all 1s ease;
+    visibility: hidden;
+
+    li {
+      border-bottom: 2px solid #000;
+      color: #000;
+      display: block;
+      max-width: 100%;
+      font-size: 1.2em;
+      padding: 1em 0;
+    }
+  } 
+  
+  nav #menu-toggle:checked ~ ul {
+    opacity: 1;
+    height: auto;
+    visibility: visible;
+  }
+  
+  nav .label-toggle {
+    display: block;
+    height: 35px;
+    margin-top: 1em;
+    width: 35px;
+    top: 0px;
+    position: absolute;
+    right: 10px;
+  }
+  
+  .hamburger-top {
+    background: linear-gradient(to bottom, #fff 0%, #fff 20%, transparent 20%, transparent 40%, #fff 40%, #fff 60%, transparent 60%, transparent 80%, #fff 80%, #fff 100%);
+  }
+  
+  .hamburger-scroll {
+    background: linear-gradient(to bottom, $secondary 0%, $secondary 20%, transparent 20%, transparent 40%, $secondary 40%, $secondary 60%, transparent 60%, transparent 80%, $secondary 80%, $secondary 100%);
+  }
+  
+  nav .wrapper {
+    display: block;
+  }
+
+  .technology-icon {
+    font-size: 2.8em;
+  }
+
+  .work-row {
+    padding: 20px 40px;
+  }
+  
+  
+}
+
+
+
+@media screen and (max-width: 1023px) {
+
+    .social-container {
+      text-align: center;
+    }
+
+
+}
